@@ -2,7 +2,7 @@
 execute if data entity @s data{state:2} on target run return run function invite:msg/already_pressed with entity @n[type=interaction,tag=bacon_invite] data
 
 # Stop if game is disabled
-execute if data entity @s data{state:2} on target run return run function invite:msg/game_disabled with entity @n[type=interaction,tag=bacon_invite] data
+execute if data entity @s data{state:0} on target run return run function invite:msg/game_disabled with entity @n[type=interaction,tag=bacon_invite] data
 
 
 

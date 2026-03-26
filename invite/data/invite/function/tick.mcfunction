@@ -1,1 +1,1 @@
-execute as @e[type=interaction,tag=bacon_invite] at @s run function invite:pressed
+execute as @e[type=interaction,tag=bacon_invite] at @s on target run function invite:pressed

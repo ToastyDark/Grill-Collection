@@ -4,3 +4,6 @@ execute on target as @n[type=interaction,tag=bacon_invite] run function invite:p
 #Reset Interaction after click
 data merge entity @s {attack:{player:[I;0,0,0,0],timestamp:0L}}
 data merge entity @s {interaction:{player:[I;0,0,0,0],timestamp:0L}}
+
+# Check if stopwatch hit time
+$execute if stopwatch invite:$(game) 10 run function invite:done

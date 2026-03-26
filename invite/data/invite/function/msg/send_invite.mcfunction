@@ -6,4 +6,4 @@ execute as @a at @s run playsound minecraft:block.note_block.chime master @s ~ ~
 schedule function invite:msg/invite_sound 6t append
 
 # Confirmation
-execute on target run title @s actionbar {text:"Invite Sent",bold:true,color:"green"}
+title @s actionbar {text:"Invite Sent",bold:true,color:"green"}

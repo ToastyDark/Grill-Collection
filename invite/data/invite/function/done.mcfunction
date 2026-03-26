@@ -8,4 +8,4 @@ execute on passengers run data modify entity @s item.id set value "minecraft:eme
 data modify entity @s data.state set value 1
 
 # Pop sound
-playsound minecraft:entity.item.pickup master @s ~ ~ ~ 0.3 0.4 0.2
+playsound minecraft:entity.item.pickup master @a ~ ~ ~ 0.3 0.4 0.2

@@ -8,7 +8,7 @@ data modify entity @s data.state set value 2
 $stopwatch create invite:$(game)
 
 # Play Click Sound
-playsound minecraft:entity.item.pickup master @s ~ ~ ~ 0.3 1.4 0.2
+execute on target run playsound minecraft:entity.item.pickup master @s ~ ~ ~ 0.3 1.4 0.2
 
 
 # Send Invite

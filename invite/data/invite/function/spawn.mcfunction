@@ -1,0 +1,1 @@
+summon interaction 38 80.35 -102.2 {width:0.35f,height:0.35f,Tags:["bacon_invite"],Passengers:[{id:"minecraft:item_display",Tags:["bacon_invite_display"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,-0.18f,0f],scale:[0.3f,0.3f,0.3f]},item:{id:"minecraft:emerald_block",count:1}}],data:{game:ctf,state:1}}

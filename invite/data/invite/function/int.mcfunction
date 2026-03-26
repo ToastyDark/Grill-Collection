@@ -6,4 +6,4 @@ data merge entity @s {attack:{player:[I;0,0,0,0],timestamp:0L}}
 data merge entity @s {interaction:{player:[I;0,0,0,0],timestamp:0L}}
 
 # Check if stopwatch hit time
-$execute if stopwatch invite:$(game) 10 run function invite:done with entity @s data
+$execute if stopwatch invite:$(game) 10.. run function invite:done with entity @s data

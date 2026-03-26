@@ -5,4 +5,4 @@ execute as @n[type=interaction,tag=bacon_invite] on passengers run data modify e
 execute as @n[type=interaction,tag=bacon_invite] run data modify entity @s data.state set value 2
 
 # Send Invite
-say I invited you!
+function invite:send_invite with entity @n[type=interaction,tag=bacon_invite] data

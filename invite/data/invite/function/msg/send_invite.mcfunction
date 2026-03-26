@@ -1,5 +1,5 @@
 # Invite Message
-$tellraw @a ["",{selector:"@s"},{text:" has invited you to play $(game)!",bold:true,color:"green"}]
+$tellraw @a ["",{selector:"@s"},{text:" has invited everyone to play $(game)!",bold:true,color:"green"}]
 
 # Playsound
 execute as @a at @s run playsound minecraft:block.note_block.chime master @s ~ ~ ~ 0.6 1 0.1

@@ -1,0 +1,1 @@
+execute as @a at @s run playsound minecraft:block.note_block.chime master @s ~ ~ ~ 0.6 1.2 0.1

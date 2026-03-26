@@ -1,6 +1,6 @@
 # Invite Message
 #$tellraw @a ["",{selector:"@s"},{text:" has invited everyone to play $(game)!",bold:true,color:"green"}]
-tellraw @a ["",{selector:"@s"},{text:" has invited you to play ctf!",bold:true,color:"green",click_event:{action:"run_command",command:"/function invite:accept with storage bacon:games $(game)"},hover_event:{action:"show_text",value:[{text:"Click to Join",color:"gray"}]}}]
+$tellraw @a ["",{selector:"@s[scores={id=$(inviter_id)}]"},{text:" has invited you to play ctf!",bold:true,color:"green",click_event:{action:"run_command",command:"/function invite:accept with storage bacon:games $(game)"},hover_event:{action:"show_text",value:[{text:"Click to Join",color:"gray"}]}}]
 
 # Playsound
 execute as @a at @s run playsound minecraft:block.note_block.chime master @s ~ ~ ~ 0.6 1 0.1

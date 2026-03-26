@@ -1,4 +1,5 @@
 # Msg
+scoreboard players set @s actionbar_cd 1
 title @s actionbar {text:"Game Disabled",bold:true,color:"red"}
 
 # Play Sound

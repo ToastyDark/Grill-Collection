@@ -1,4 +1,5 @@
 # Actionbar
+scoreboard players set @s actionbar_cd 1
 $execute on target run title @s actionbar ["",{selector:"@a[scores={id=$(inviter_id)},limit=1]",bold:true,color:"gold"},{text:" has already sent an invitation.",bold:true,color:"gold"}]
 
 # Sound

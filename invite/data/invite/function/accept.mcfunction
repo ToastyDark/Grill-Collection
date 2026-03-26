@@ -1,4 +1,4 @@
 # Give Potion
-$function transportu:give/$(potion)
+$trigger tp.$(game)
 
 # Add to tally

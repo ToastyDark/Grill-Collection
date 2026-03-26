@@ -1,3 +1,7 @@
+# Tally Invites and let player know
+function invite:msg/invite_tally with entity @s data
+data modify entity @s data.invite_tally set value 0
+
 # Stop Stopwatch
 $stopwatch remove invite:$(game)
 

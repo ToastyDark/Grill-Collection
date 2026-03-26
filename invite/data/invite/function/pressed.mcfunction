@@ -15,6 +15,9 @@ execute on passengers run data modify entity @s item.id set value "minecraft:gol
 # Set State
 data modify entity @s data.state set value 2
 
+# Set Invite Tally
+data modify entity @s data.invite_tally set value 0
+
 # Set Text
 execute on passengers on passengers run data modify entity @s text set value ["",{"text":"Invite Sent","color":"gold","bold": true}]
 

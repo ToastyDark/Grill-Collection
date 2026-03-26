@@ -1,0 +1,1 @@
+$title @a[scores={id=$(inviter_id)}] actionbar {text:"$(invite_tally) players joined from your invite",bold:true,color:"gold"}

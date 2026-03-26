@@ -1,8 +1,8 @@
 # Stop if already pressed
-execute if data entity @s {state:2} run return run function invite:msg/already_pressed with entity @s data
+execute if data entity @s data{state:2} run return run function invite:msg/already_pressed with entity @s data
 
 # Stop if game is disabled
-execute if data entity @s {state:0} run return run function invite:msg/game_disabled
+execute if data entity @s data{state:2} run return run function invite:msg/game_disabled
 
 
 

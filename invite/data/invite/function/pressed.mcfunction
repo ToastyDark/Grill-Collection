@@ -15,6 +15,10 @@ execute on passengers run data modify entity @s item.id set value "minecraft:gol
 # Set State
 data modify entity @s data.state set value 2
 
+# Set Text
+execute on passengers on passengers run data modify entity @s text set value ["",{"text":"Invite Sent","color":"gold","bold": true}]
+
+
 # Start Invite Cooldown Timer
 $stopwatch create invite:$(game)
 

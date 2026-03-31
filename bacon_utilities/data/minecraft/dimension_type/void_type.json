@@ -13,7 +13,6 @@
     "minecraft:visual/cloud_height": 192.33,
     "minecraft:visual/fog_color": "#c0d8ff"
   },
-  "has_fixed_time":false,
   "skybox":"overworld",
   "has_skylight": true,
   "has_ceiling": false,

@@ -1,5 +1,5 @@
 # Playsound
-execute at @s run playsound minecraft:block.note_block.hat master @s ~ ~ ~ 0.5 0.8 0.5
+execute at @s run playsound minecraft:block.note_block.hat master @s ~ ~ ~ 0.5 1 0.5
 
 # Remove Left Click Tag
 tag @s remove jpad_lmb

@@ -7,3 +7,6 @@ execute at @s as @e[type=armor_stand,tag=jpad_marker] if score @s id = @p id run
 
 # Playsound
 playsound block.slime_block.break master @s ~ ~ ~ 0.4 0.7 0.4
+
+# Clear Actionbar
+title @s actionbar {text:" "}

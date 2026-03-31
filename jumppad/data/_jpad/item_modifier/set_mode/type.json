@@ -1,0 +1,8 @@
+{
+  "function": "minecraft:set_components",
+  "components": {
+    "minecraft:custom_data": {
+      "jpad_mode:type": {}
+    }
+  }
+}

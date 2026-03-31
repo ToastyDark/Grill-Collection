@@ -25,6 +25,9 @@ execute unless items entity @s weapon.mainhand minecraft:written_book run scoreb
 execute if score $quill_is_in_mainhand mail.misc matches 1 run item replace entity @s weapon.mainhand with air
 execute if score $quill_is_in_mainhand mail.misc matches 0 run item replace entity @s weapon.offhand with air
 
+playsound minecraft:block.bamboo.hit
+tellraw @s {"text":"Mail Sent!", "color":"green"}
+
 # (mail:send handles notification)
 function mail:send with storage mail:quicksend
 

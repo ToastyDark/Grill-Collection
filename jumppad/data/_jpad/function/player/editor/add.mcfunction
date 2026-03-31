@@ -2,7 +2,7 @@
 tag @s add jpad_editor
 
 # Summon Interaction
-summon interaction ~ ~ ~ {Tags:["jpad_int","jpad_unassigned"],width:0.5,height:0.5}
+summon interaction ~ ~ ~ {Tags:["jpad_int","jpad_unassigned"],width:0.2,height:0.2}
 
 #Give ID
 scoreboard players operation @n[type=interaction,tag=jpad_unassigned] id = @s id

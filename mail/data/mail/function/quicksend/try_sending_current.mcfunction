@@ -25,3 +25,4 @@ execute if score $quill_is_in_mainhand mail.misc matches 0 run item replace enti
 # (mail:send handles notification)
 function mail:send with storage mail:quicksend
 
+kill 7155d833-c3b3-49e5-b72b-2c4ade41740d

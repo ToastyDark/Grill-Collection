@@ -1,1 +1,1 @@
-$data modify storage mail:quicksend message set value $(message)
+$data modify storage mail:quicksend message set value "$(message)"

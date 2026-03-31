@@ -27,5 +27,5 @@ execute if items entity @s weapon.mainhand slime_ball[minecraft:custom_data~{jpa
 execute if items entity @s weapon.mainhand slime_ball[minecraft:custom_data~{jpad_mode:block}] run return run item modify entity @s weapon.mainhand _jpad:set_mode/type
 
 # Switch Mode to Create
-execute if items entity @s weapon.mainhand slime_ball[minecraft:custom_data~{jpad_mode:type}] run return run item modify entity @s weapon.mainhand _jpad:set_mode/create
+execute if items entity @s weapon.mainhand slime_ball[minecraft:custom_data~{jpad_mode:type}] run return run function _jpad:action/mode/mode/create
 

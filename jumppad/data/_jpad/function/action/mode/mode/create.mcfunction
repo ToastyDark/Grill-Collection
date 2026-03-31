@@ -1,0 +1,1 @@
+item modify entity @s weapon.mainhand _jpad:set_mode/create

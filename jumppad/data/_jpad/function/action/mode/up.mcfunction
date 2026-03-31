@@ -6,25 +6,25 @@ tag @s remove jpad_rmb
 
 
 # Switch Mode to Create
-execute unless items entity @s weapon.mainhand slime_ball[minecraft:custom_data~{jpad_mode:delete}] run return run item modify entity @s weapon.mainhand _jpad:set_mode/create
+execute if items entity @s weapon.mainhand slime_ball[minecraft:custom_data~{jpad_mode:delete}] run return run item modify entity @s weapon.mainhand _jpad:set_mode/create
 
 # Switch Mode to Type
-execute unless items entity @s weapon.mainhand slime_ball[minecraft:custom_data~{jpad_mode:create}] run return run item modify entity @s weapon.mainhand _jpad:set_mode/type
+execute if items entity @s weapon.mainhand slime_ball[minecraft:custom_data~{jpad_mode:create}] run return run item modify entity @s weapon.mainhand _jpad:set_mode/type
 
 # Switch Mode to Block
-execute unless items entity @s weapon.mainhand slime_ball[minecraft:custom_data~{jpad_mode:type}] run return run item modify entity @s weapon.mainhand _jpad:set_mode/block
+execute if items entity @s weapon.mainhand slime_ball[minecraft:custom_data~{jpad_mode:type}] run return run item modify entity @s weapon.mainhand _jpad:set_mode/block
 
 # Switch Mode to Length
-execute unless items entity @s weapon.mainhand slime_ball[minecraft:custom_data~{jpad_mode:block}] run return run item modify entity @s weapon.mainhand _jpad:set_mode/length
+execute if items entity @s weapon.mainhand slime_ball[minecraft:custom_data~{jpad_mode:block}] run return run item modify entity @s weapon.mainhand _jpad:set_mode/length
 
 # Switch Mode to Width
-execute unless items entity @s weapon.mainhand slime_ball[minecraft:custom_data~{jpad_mode:length}] run return run item modify entity @s weapon.mainhand _jpad:set_mode/width
+execute if items entity @s weapon.mainhand slime_ball[minecraft:custom_data~{jpad_mode:length}] run return run item modify entity @s weapon.mainhand _jpad:set_mode/width
 
 # Switch Mode to Strength
-execute unless items entity @s weapon.mainhand slime_ball[minecraft:custom_data~{jpad_mode:width}] run return run item modify entity @s weapon.mainhand _jpad:set_mode/strength
+execute if items entity @s weapon.mainhand slime_ball[minecraft:custom_data~{jpad_mode:width}] run return run item modify entity @s weapon.mainhand _jpad:set_mode/strength
 
 # Switch Mode to Gravity
-execute unless items entity @s weapon.mainhand slime_ball[minecraft:custom_data~{jpad_mode:strength}] run return run item modify entity @s weapon.mainhand _jpad:set_mode/gravity
+execute if items entity @s weapon.mainhand slime_ball[minecraft:custom_data~{jpad_mode:strength}] run return run item modify entity @s weapon.mainhand _jpad:set_mode/gravity
 
 # Switch Mode to Delete
-execute unless items entity @s weapon.mainhand slime_ball[minecraft:custom_data~{jpad_mode:gravity}] run return run item modify entity @s weapon.mainhand _jpad:set_mode/delete
+execute if items entity @s weapon.mainhand slime_ball[minecraft:custom_data~{jpad_mode:gravity}] run return run item modify entity @s weapon.mainhand _jpad:set_mode/delete

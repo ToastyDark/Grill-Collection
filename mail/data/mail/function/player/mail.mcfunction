@@ -19,4 +19,4 @@ execute if score $mail_index mail.misc >= $mail_amount_total mail.misc run retur
 
 # Next page
 execute store result storage mail:temporary_print index int 1 run scoreboard players get $mail_index mail.misc
-tellraw @s [{"text":">>> Next Page","color":"red", "clickEvent":{"action":"run_command","value":"/function mail:player/mail with storage mail:temporary_print"}}]
+tellraw @s [{"text":">>> Next Page","color":"red", "click_event":{"action":"run_command","command":"/function mail:player/mail with storage mail:temporary_print"}}]

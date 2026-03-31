@@ -12,4 +12,4 @@ execute as @a unless score @s mail.settings.notify_of_mail = @s mail.settings.no
 execute as @a if score @s mail.login matches 1.. run function mail:join
 
 # Send w/ Book'n'Quill
-# execute as @a if items entity @s weapon.* minecraft:written_book run function mail:quicksend/try_sending_current
+execute as @a at @s if items entity @s weapon.* minecraft:written_book run function mail:quicksend/try_sending_current

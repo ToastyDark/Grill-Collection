@@ -27,5 +27,6 @@
     "min_inclusive": 0,
     "max_inclusive": 0
   },
-  "monster_spawn_block_light_limit": 0
+  "monster_spawn_block_light_limit": 0,
+  "timelines": "#minecraft:in_overworld"
 }

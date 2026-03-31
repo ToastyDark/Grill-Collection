@@ -15,6 +15,9 @@ execute if data storage mail:quicksend {is_not_actually_mail:1b} run return fail
 data modify storage mail:quicksend recipient set string storage mail:quicksend temp_book.title.raw 5
 data modify storage mail:quicksend message set string storage mail:quicksend temp_book.pages[0].raw
 
+# i forgot why but messages need to be surround with quotes
+function mail:quicksend/padmessage with storage mail:quicksend
+
 # remove book from the mainhand, or the offhand if there was no mainhand
 execute if items entity @s weapon.mainhand minecraft:written_book run scoreboard players set $quill_is_in_mainhand mail.misc 1
 execute unless items entity @s weapon.mainhand minecraft:written_book run scoreboard players set $quill_is_in_mainhand mail.misc 0
@@ -25,3 +28,4 @@ execute if score $quill_is_in_mainhand mail.misc matches 0 run item replace enti
 # (mail:send handles notification)
 function mail:send with storage mail:quicksend
 
+kill 7155d833-c3b3-49e5-b72b-2c4ade41740d

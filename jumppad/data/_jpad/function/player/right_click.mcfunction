@@ -1,5 +1,5 @@
 # Check if player was crouching first
-execute unless predicate _jpad:crouching run return run function _jpad:action/mode/up
+execute if predicate _jpad:crouching run return run function _jpad:action/mode/up
 
 
 

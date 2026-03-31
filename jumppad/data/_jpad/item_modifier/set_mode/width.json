@@ -3,7 +3,7 @@
   "components": {
     "minecraft:custom_data": {
       "jpad": true,
-      "jpad_mode": "type"
+      "jpad_mode": "width"
     }
   }
 }

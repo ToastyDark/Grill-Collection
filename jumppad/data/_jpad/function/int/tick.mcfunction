@@ -1,4 +1,6 @@
 # Prevent Strays if Player Leaves server
+execute store result storage jpad:temp check_left_id int 1 run scoreboard players get @s id
+function _jpad:player/editor/left_stray_check with storage jpad:temp
 
 # Left Click Detection
 execute on attacker run tag @s add jpad_lmb

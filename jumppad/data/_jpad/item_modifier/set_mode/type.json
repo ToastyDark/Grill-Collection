@@ -2,6 +2,7 @@
   "function": "minecraft:set_components",
   "components": {
     "minecraft:custom_data": {
+      "jpad:true": {},
       "jpad_mode:type": {}
     }
   }

@@ -1,1 +1,1 @@
-execute at @s as @e[type=armor_stand,tag=jpad_marker] if score @s id = @p id run tp @s ^ ^.5 ^.4
+execute at @s as @e[type=armor_stand,tag=jpad_marker] if score @s id = @p id run tp @s ^ ^.3 ^.4

@@ -2,7 +2,7 @@
 tag @s add jpad_editor
 
 # Summon Interaction
-summon armor_stand ~ ~ ~ {Tags:["jpad_marker","jpad_unassigned"],Small:1b,Marker:1b,Invulnerable:1b,Passengers:[{id:"minecraft:interaction",width:1.2f,height:1f,Tags:["jpad_int","jpad_unassigned"]}]}
+summon armor_stand ~ ~ ~ {Tags:["jpad_marker","jpad_unassigned"],Small:1b,Invulnerable:1b,Passengers:[{id:"minecraft:interaction",width:1.2f,height:1f,Tags:["jpad_int","jpad_unassigned"]}]}
 
 #Give ID
 scoreboard players operation @n[type=armor_stand,tag=jpad_unassigned] id = @s id

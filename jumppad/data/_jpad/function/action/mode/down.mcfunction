@@ -5,6 +5,10 @@ execute at @s run playsound minecraft:block.note_block.hat master @s ~ ~ ~ 0.5 0
 tag @s remove jpad_lmb
 
 
+execute if items entity @s weapon.mainhand slime_ball[minecraft:custom_data~{jpad_mode:create}] run item modify entity @s weapon.mainhand _jpad:set_mode/delete
+
+
+
 # Switch Mode to Delete
 execute if items entity @s weapon.mainhand slime_ball[minecraft:custom_data~{jpad_mode:create}] run return run item modify entity @s weapon.mainhand _jpad:set_mode/delete
 

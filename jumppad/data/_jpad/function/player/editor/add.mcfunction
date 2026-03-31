@@ -5,7 +5,7 @@ tag @s add jpad_editor
 summon armadillo ~ ~ ~ {Tags:["jpad_int","jpad_unassigned"]}
 
 #Give ID
-scoreboard players operation @n[type=interaction,tag=jpad_unassigned] id = @s id
+scoreboard players operation @n[type=armadillo,tag=jpad_unassigned] id = @s id
 
 # Remove Unassigned tag
 tag @n[type=armadillo,tag=jpad_unassigned] remove jpad_unassigned

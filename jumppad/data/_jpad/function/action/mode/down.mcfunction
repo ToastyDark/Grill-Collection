@@ -13,26 +13,26 @@ tag @s add jpad_switching_mode
 
 
 # Switch Mode to Delete
-execute if items entity @s weapon.mainhand slime_ball[minecraft:custom_data~{jpad_mode:create}] run function _jpad:action/mode/mode/delete
+execute if items entity @s weapon.mainhand slime_ball[minecraft:custom_data~{jpad_mode:create}] if entity @s[tag=jpad_switching_mode] run function _jpad:action/mode/mode/delete
 
 # Switch Mode to Gravity
-execute if items entity @s weapon.mainhand slime_ball[minecraft:custom_data~{jpad_mode:delete}] run function _jpad:action/mode/mode/gravity
+execute if items entity @s weapon.mainhand slime_ball[minecraft:custom_data~{jpad_mode:delete}] if entity @s[tag=jpad_switching_mode] run function _jpad:action/mode/mode/gravity
 
 # Switch Mode to Strength
-execute if items entity @s weapon.mainhand slime_ball[minecraft:custom_data~{jpad_mode:gravity}] run function _jpad:action/mode/mode/strength
+execute if items entity @s weapon.mainhand slime_ball[minecraft:custom_data~{jpad_mode:gravity}] if entity @s[tag=jpad_switching_mode] run function _jpad:action/mode/mode/strength
 
 # Switch Mode to Width
-execute if items entity @s weapon.mainhand slime_ball[minecraft:custom_data~{jpad_mode:strength}] run function _jpad:action/mode/mode/width
+execute if items entity @s weapon.mainhand slime_ball[minecraft:custom_data~{jpad_mode:strength}] if entity @s[tag=jpad_switching_mode] run function _jpad:action/mode/mode/width
 
 # Switch Mode to Length
-execute if items entity @s weapon.mainhand slime_ball[minecraft:custom_data~{jpad_mode:width}] run function _jpad:action/mode/mode/length
+execute if items entity @s weapon.mainhand slime_ball[minecraft:custom_data~{jpad_mode:width}] if entity @s[tag=jpad_switching_mode] run function _jpad:action/mode/mode/length
 
 # Switch Mode to Block
-execute if items entity @s weapon.mainhand slime_ball[minecraft:custom_data~{jpad_mode:length}] run function _jpad:action/mode/mode/block
+execute if items entity @s weapon.mainhand slime_ball[minecraft:custom_data~{jpad_mode:length}] if entity @s[tag=jpad_switching_mode] run function _jpad:action/mode/mode/block
 
 # Switch Mode to Type
-execute if items entity @s weapon.mainhand slime_ball[minecraft:custom_data~{jpad_mode:block}] run function _jpad:action/mode/mode/type
+execute if items entity @s weapon.mainhand slime_ball[minecraft:custom_data~{jpad_mode:block}] if entity @s[tag=jpad_switching_mode] run function _jpad:action/mode/mode/type
 
 # Switch Mode to Create
-execute if items entity @s weapon.mainhand slime_ball[minecraft:custom_data~{jpad_mode:type}] run function _jpad:action/mode/mode/create
+execute if items entity @s weapon.mainhand slime_ball[minecraft:custom_data~{jpad_mode:type}] if entity @s[tag=jpad_switching_mode] run function _jpad:action/mode/mode/create
 

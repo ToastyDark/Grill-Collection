@@ -6,6 +6,8 @@ item replace entity 7155d833-c3b3-49e5-b72b-2c4ade41740d container.0 from entity
 
 data modify storage mail:quicksend temp_book set from entity 7155d833-c3b3-49e5-b72b-2c4ade41740d item.components.minecraft:written_book_content
 
+kill 7155d833-c3b3-49e5-b72b-2c4ade41740d
+
 # first 5 letters of title should be 'mail:'
 data modify storage mail:quicksend prefix set string storage mail:quicksend temp_book.title.raw 0 5
 execute store success storage mail:quicksend is_not_actually_mail byte 1 run data modify storage mail:quicksend prefix set value "mail:"
@@ -30,5 +32,3 @@ tellraw @s {"text":"Mail Sent!", "color":"green"}
 
 # (mail:send handles notification)
 function mail:send with storage mail:quicksend
-
-kill 7155d833-c3b3-49e5-b72b-2c4ade41740d

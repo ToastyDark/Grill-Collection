@@ -1,1 +1,1 @@
-execute at @s as @e[type=interaction,tag=jpad_int] if score @s id = @p id run tp @s ^ ^0.8 ^.05
+execute at @s as @e[type=interaction,tag=jpad_int] if score @s id = @p id run tp @s ^ ^1.5 ^.01

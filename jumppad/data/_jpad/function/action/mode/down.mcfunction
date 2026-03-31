@@ -4,29 +4,28 @@ execute at @s run playsound minecraft:block.note_block.hat master @s ~ ~ ~ 0.5 0
 # Remove Left Click Tag
 tag @s remove jpad_lmb
 
-item modify entity @s weapon.mainhand _jpad:set_mode/type
 
 # Switch Mode to Delete
-execute if items entity @s weapon.mainhand slime_ball[minecraft:custom_data~{jpad_mode:create}] run return run item modify entity @s weapon.mainhand _jpad:set_mode/delete
+execute unless items entity @s weapon.mainhand slime_ball[minecraft:custom_data~{jpad_mode:create}] run return run item modify entity @s weapon.mainhand _jpad:set_mode/delete
 
 # Switch Mode to Gravity
-execute if items entity @s weapon.mainhand slime_ball[minecraft:custom_data~{jpad_mode:delete}] run return run item modify entity @s weapon.mainhand _jpad:set_mode/gravity
+execute unless items entity @s weapon.mainhand slime_ball[minecraft:custom_data~{jpad_mode:delete}] run return run item modify entity @s weapon.mainhand _jpad:set_mode/gravity
 
 # Switch Mode to Strength
-execute if items entity @s weapon.mainhand slime_ball[minecraft:custom_data~{jpad_mode:gravity}] run return run item modify entity @s weapon.mainhand _jpad:set_mode/strength
+execute unless items entity @s weapon.mainhand slime_ball[minecraft:custom_data~{jpad_mode:gravity}] run return run item modify entity @s weapon.mainhand _jpad:set_mode/strength
 
 # Switch Mode to Width
-execute if items entity @s weapon.mainhand slime_ball[minecraft:custom_data~{jpad_mode:strength}] run return run item modify entity @s weapon.mainhand _jpad:set_mode/width
+execute unless items entity @s weapon.mainhand slime_ball[minecraft:custom_data~{jpad_mode:strength}] run return run item modify entity @s weapon.mainhand _jpad:set_mode/width
 
 # Switch Mode to Length
-execute if items entity @s weapon.mainhand slime_ball[minecraft:custom_data~{jpad_mode:width}] run return run item modify entity @s weapon.mainhand _jpad:set_mode/length
+execute unless items entity @s weapon.mainhand slime_ball[minecraft:custom_data~{jpad_mode:width}] run return run item modify entity @s weapon.mainhand _jpad:set_mode/length
 
 # Switch Mode to Block
-execute if items entity @s weapon.mainhand slime_ball[minecraft:custom_data~{jpad_mode:length}] run return run item modify entity @s weapon.mainhand _jpad:set_mode/block
+execute unless items entity @s weapon.mainhand slime_ball[minecraft:custom_data~{jpad_mode:length}] run return run item modify entity @s weapon.mainhand _jpad:set_mode/block
 
 # Switch Mode to Type
-execute if items entity @s weapon.mainhand slime_ball[minecraft:custom_data~{jpad_mode:block}] run return run item modify entity @s weapon.mainhand _jpad:set_mode/type
+execute unless items entity @s weapon.mainhand slime_ball[minecraft:custom_data~{jpad_mode:block}] run return run item modify entity @s weapon.mainhand _jpad:set_mode/type
 
 # Switch Mode to Create
-execute if items entity @s weapon.mainhand slime_ball[minecraft:custom_data~{jpad_mode:type}] run return run item modify entity @s weapon.mainhand _jpad:set_mode/create
+execute unless items entity @s weapon.mainhand slime_ball[minecraft:custom_data~{jpad_mode:type}] run return run item modify entity @s weapon.mainhand _jpad:set_mode/create
 

@@ -4,7 +4,7 @@
 execute on attacker run tag @s add jpad_lmb
 
 # Right Click Detection
-execute on attacker run tag @s add jpad_rmb
+execute on target run tag @s add jpad_rmb
 
 
 

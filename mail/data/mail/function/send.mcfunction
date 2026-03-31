@@ -12,4 +12,6 @@ $execute if score $check_mail_index mail.misc >= $mail_amount_total mail.misc ru
 
 
 # Notification
+function mail:player/get_username
+data modify storage mail:temporary_check author set from storage mail:temporary_username name
 execute as @a if score @s mail.settings.notify_of_mail matches 1 run function mail:player/notify_of_mail with storage mail:temporary_check

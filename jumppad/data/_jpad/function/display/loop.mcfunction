@@ -15,8 +15,8 @@ execute store result entity @s data.row int 1 run scoreboard players get row_val
 
 
 # Summon Display
-function _jpad:display/place with entity @s
+function _jpad:display/place with entity @s data 
 
 
 # Repeat
-function _jpad:display/loop with entity @s
+function _jpad:display/loop with entity @s data

@@ -7,4 +7,4 @@ data modify entity @s data.column set value 1
 
 
 # Start Loop
-function _jpad:display/loop with entity @s
+function _jpad:display/loop with entity @s data

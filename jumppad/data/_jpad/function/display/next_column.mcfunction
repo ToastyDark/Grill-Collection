@@ -10,4 +10,4 @@ data modify entity @s data.row set value 0
 
 
 # Restart loop
-function _jpad:display/loop with entity @s
+function _jpad:display/loop with entity @s data

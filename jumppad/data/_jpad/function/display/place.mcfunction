@@ -5,4 +5,4 @@ $summon block_display ~ ~ ~ {Tags:["jpad","jpad_display",jpad_display_new],trans
 execute as @n[type=block_display,tag=jpad_display_new] run ride @s mount @n[type=armor_stand,tag=jpad_jump_pad]
 
 # Remove Tag
-execute on vehicle if entity @s[tag=jpad_display_new] run tag @s remove jpad_display_new
+execute on passengers if entity @s[tag=jpad_display_new] run tag @s remove jpad_display_new

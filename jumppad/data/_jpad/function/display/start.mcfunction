@@ -1,5 +1,5 @@
 # Kill any displays
-execute on passengers run kill @s
+function _jpad:display/kill_loop
 
 # ------ Prepare Loop ------
 data modify entity @s data.row set value 0

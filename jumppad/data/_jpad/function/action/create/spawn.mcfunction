@@ -1,5 +1,5 @@
 # Check if Jump Pad is already here
-execute if entity @e[type=armor_stand,distance=..3] run return run title @s actionbar {text:"A Jump Pad is already here",bold:true,color:"red"}
+execute if entity @e[type=armor_stand,distance=..3] run return run function _jpad:msg/already_jpad
 
 # Spawn Jump Pad Marker
 execute align xz run summon armor_stand ~ ~ ~ {Tags:["jpad_jump_pad",jpad_new],Marker:1b,Invulnerable:1b,data:{type:jump,block:slime_block,length:2,width:2}}

@@ -1,8 +1,9 @@
 # Check if row hit max
 execute store result score row_val temp run data get entity @s data.row
 scoreboard players add row_val temp 1
+#scoreboard players set 
 # Check if all of row is finished, move to next column
-$execute if score row_val temp > @s $(length) run return run function _jpad:display/next_column with entity @s data
+$execute unless score row_val temp matches ..$(length) run return run function _jpad:display/next_column with entity @s data
 execute store result entity @s data.row int 1 run scoreboard players get row_val temp
 
 

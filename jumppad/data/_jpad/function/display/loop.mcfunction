@@ -8,9 +8,9 @@ execute store result entity @s data.row int 1 run scoreboard players get row_val
 
 
 # +1 row
-execute store result score $temp temp run data get entity @s data.length 1
-scoreboard players add $temp temp 1
-execute store result entity @s data.length int 1 run scoreboard players get $temp temp
+#execute store result score $temp temp run data get entity @s data.length 1
+#scoreboard players add $temp temp 1
+#execute store result entity @s data.length int 1 run scoreboard players get $temp temp
 
 
 

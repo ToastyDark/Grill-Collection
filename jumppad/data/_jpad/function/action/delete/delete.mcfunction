@@ -1,1 +1,5 @@
-kill @n[type=armor_stand,distance=..2,tag=jpad_jump_pad]
+# Kill Displays
+execute on passengers run kill @s
+
+#!! Change to selected
+kill @s

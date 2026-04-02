@@ -10,4 +10,4 @@ execute if items entity @s weapon.mainhand slime_ball[minecraft:custom_data~{jpa
 
 
 # Delete
-execute if items entity @s weapon.mainhand slime_ball[minecraft:custom_data~{jpad_mode:delete}] run return run function _jpad:action/delete/delete
+execute if items entity @s weapon.mainhand slime_ball[minecraft:custom_data~{jpad_mode:delete}] run return run function _jpad:action/delete/start

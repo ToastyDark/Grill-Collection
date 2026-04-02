@@ -1,5 +1,5 @@
 # Spawn Display
-summon block_display ~ ~ ~ {Tags:["jpad","jpad_display",jpad_display_new],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[1.5f,-0.0612f,1.5f],scale:[1f,0.01f,1f]},block_state:{Name:"minecraft:slime_block"}}
+execute align xy run summon block_display ~ ~ ~ {Tags:["jpad","jpad_display",jpad_display_new],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[1.5f,-0.0612f,1.5f],scale:[1f,0.01f,1f]},block_state:{Name:"minecraft:slime_block"}}
 
 # Mount
 execute as @n[type=block_display,tag=jpad_display_new] run ride @s mount @n[type=armor_stand,tag=jpad_jump_pad]

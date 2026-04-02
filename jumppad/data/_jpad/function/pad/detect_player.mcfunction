@@ -1,5 +1,7 @@
 # Check for players who can jump on the pad
-execute align xz positioned ~1 ~ ~1 as @a if entity @s[dx=3,dy=1,dz=3] at @s run playsound entity.player.levelup master @s
+# Outline True
+$execute align xz positioned ~ ~ ~ as @a if entity @s[dx=$(length),dy=1,dz=$(width)] at @s run playsound entity.player.levelup master @s
+# Outline False
 
 
 # Check for players who can edit the pad

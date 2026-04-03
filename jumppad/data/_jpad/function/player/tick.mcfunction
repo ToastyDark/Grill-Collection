@@ -12,3 +12,7 @@ execute if entity @s[tag=jpad_editor] unless items entity @s weapon.mainhand sli
 # Check if Player Left Clicks
 execute if entity @s[tag=jpad_lmb] run function _jpad:player/left_click
 execute if entity @s[tag=jpad_rmb] run function _jpad:player/right_click
+
+
+# Actionbar for players not over pad
+execute if entity @s[tag=!jpad_over] run function _jpad:player/actionbar2

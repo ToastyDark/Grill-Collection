@@ -1,7 +1,3 @@
-# Stop if no block in offhand
-execute unless items entity @s weapon.offhand air run return run function _jpad:msg/hold_block
-
-
 # Get block from off_hand
 data modify entity @s data.block set from entity @p equipment.offhand.id
 

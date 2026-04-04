@@ -1,6 +1,6 @@
 # Get Score
 execute store result score $current_width temp run data get entity @s data.width
-#Check Value
+#Check if already too high
 execute if score $current_width temp matches 15.. run return run execute as @p run function _jpad:msg/error_sound
 # Add 1
 scoreboard players add $current_width temp 1

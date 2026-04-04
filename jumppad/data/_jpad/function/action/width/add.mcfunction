@@ -6,3 +6,6 @@ scoreboard players reset $current_width temp
 
 # Respawn Display
 function _jpad:display/start
+
+# Play Sound
+playsound minecraft:block.scaffolding.place master @a ~ ~ ~ 0.6 2 0.6

@@ -14,3 +14,6 @@ execute at @s as @a[tag=jpad_over] run function _jpad:pad/players_over_pad with 
 
 # Check for players who can edit the pad
 #execute as @a[tag=jpad_over] at @s run playsound entity.player.levelup master @s ~ ~ ~
+
+# Add Editors to Stand
+function _jpad:pad/editor/main

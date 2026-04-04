@@ -1,0 +1,1 @@
+execute store result storage jpad:temp action.current_id int 1 run scoreboard players get @s id

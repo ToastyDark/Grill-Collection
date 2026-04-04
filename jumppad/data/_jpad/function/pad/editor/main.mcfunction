@@ -1,5 +1,5 @@
 # Remove old
-data remove entity @s data.edtiors
+data remove entity @s data.editors
 
 
 # Add new editors

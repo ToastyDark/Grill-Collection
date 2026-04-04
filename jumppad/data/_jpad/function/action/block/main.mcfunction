@@ -1,0 +1,1 @@
+$function _jpad:action/block/start {current_id:$(current_id), action:block }

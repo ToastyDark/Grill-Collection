@@ -26,5 +26,8 @@ execute if items entity @s weapon.mainhand slime_ball[minecraft:custom_data~{jpa
 # Switch Mode to Gravity
 execute if items entity @s weapon.mainhand slime_ball[minecraft:custom_data~{jpad_mode:strength}] run return run item modify entity @s weapon.mainhand _jpad:set_mode/gravity
 
+# Switch Mode to Print
+execute if items entity @s weapon.mainhand slime_ball[minecraft:custom_data~{jpad_mode:gravity}] run return run item modify entity @s weapon.mainhand _jpad:set_mode/print
+
 # Switch Mode to Delete
-execute if items entity @s weapon.mainhand slime_ball[minecraft:custom_data~{jpad_mode:gravity}] run return run item modify entity @s weapon.mainhand _jpad:set_mode/delete
+execute if items entity @s weapon.mainhand slime_ball[minecraft:custom_data~{jpad_mode:print}] run return run item modify entity @s weapon.mainhand _jpad:set_mode/delete

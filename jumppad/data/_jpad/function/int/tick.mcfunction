@@ -3,10 +3,10 @@ execute store result storage jpad:temp check_left_id int 1 run scoreboard player
 function _jpad:player/editor/left_stray_check with storage jpad:temp
 
 # Left Click Detection
-execute on attacker run tag @s add jpad_lmb
+execute on attacker if score @s id = @n[type=interaction,tag=jpad_int] id run tag @s add jpad_lmb
 
 # Right Click Detection
-execute on target run tag @s add jpad_rmb
+execute on target if score @s id = @n[type=interaction,tag=jpad_int] id run tag @s add jpad_rmb
 
 
 

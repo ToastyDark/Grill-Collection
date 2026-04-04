@@ -1,5 +1,5 @@
 # Stop if no block in offhand
-execute if items entity @s weapon.offhand air run return run function _jpad:msg/hold_block
+execute unless items entity @s weapon.offhand air run return run function _jpad:msg/hold_block
 
 
 # Get block from off_hand

@@ -22,5 +22,8 @@ $execute if items entity @s weapon.mainhand slime_ball[minecraft:custom_data~{jp
 # Gravity Mode
 $execute if items entity @s weapon.mainhand slime_ball[minecraft:custom_data~{jpad_mode:gravity}] unless entity @s[scores={actionbar_cd=1..}] run return run title @s actionbar [{text:"Gravity: ",bold:true,color:"gray"},{text:"$(gravity)",bold:true,color:"aqua"}]
 
+# Print Mode
+execute if items entity @s weapon.mainhand slime_ball[minecraft:custom_data~{jpad_mode:print}] unless entity @s[scores={actionbar_cd=1..}] run return run title @s actionbar [{text:"Mode: ",bold:true,color:"gray"},{text:"Print Extra Options",bold:true,color:"red"}]
+
 # Delete Mode
 execute if items entity @s weapon.mainhand slime_ball[minecraft:custom_data~{jpad_mode:delete}] unless entity @s[scores={actionbar_cd=1..}] run return run title @s actionbar [{text:"Mode: ",bold:true,color:"gray"},{text:"Delete",bold:true,color:"red"}]

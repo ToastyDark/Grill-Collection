@@ -17,5 +17,8 @@ execute if items entity @s weapon.mainhand slime_ball[minecraft:custom_data~{jpa
 # Width
 execute if items entity @s weapon.mainhand slime_ball[minecraft:custom_data~{jpad_mode:width}] run return run function _jpad:action/width/main with storage jpad:temp action
 
+# Print
+execute if items entity @s weapon.mainhand slime_ball[minecraft:custom_data~{jpad_mode:print}] run return run function _jpad:action/print/print
+
 # Delete
 execute if items entity @s weapon.mainhand slime_ball[minecraft:custom_data~{jpad_mode:delete}] run return run function _jpad:action/delete/start

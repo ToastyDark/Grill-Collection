@@ -14,11 +14,17 @@ execute if items entity @s weapon.mainhand slime_ball[minecraft:custom_data~{jpa
 # Block
 execute if items entity @s weapon.mainhand slime_ball[minecraft:custom_data~{jpad_mode:block}] run return run function _jpad:action/block/main with storage jpad:temp action
 
-# Width
-execute if items entity @s weapon.mainhand slime_ball[minecraft:custom_data~{jpad_mode:length}] run return run function _jpad:action/length/main with storage jpad:temp action
+# Length
+execute if items entity @s weapon.mainhand slime_ball[minecraft:custom_data~{jpad_mode:size,jpad_facing:x}] run return run function _jpad:action/length/main with storage jpad:temp action
 
 # Width
-execute if items entity @s weapon.mainhand slime_ball[minecraft:custom_data~{jpad_mode:width}] run return run function _jpad:action/width/main with storage jpad:temp action
+execute if items entity @s weapon.mainhand slime_ball[minecraft:custom_data~{jpad_mode:size,jpad_facing:y}] run return run function _jpad:action/width/main with storage jpad:temp action
+
+# Length
+#execute if items entity @s weapon.mainhand slime_ball[minecraft:custom_data~{jpad_mode:length}] run return run function _jpad:action/length/main with storage jpad:temp action
+
+# Width
+#execute if items entity @s weapon.mainhand slime_ball[minecraft:custom_data~{jpad_mode:width}] run return run function _jpad:action/width/main with storage jpad:temp action
 
 # Print
 execute if items entity @s weapon.mainhand slime_ball[minecraft:custom_data~{jpad_mode:print}] run return run function _jpad:action/print/print

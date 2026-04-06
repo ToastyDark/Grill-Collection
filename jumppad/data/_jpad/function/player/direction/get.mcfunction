@@ -1,1 +1,2 @@
-execute if entity @s[y_rotation=-45..45] run data modify
+execute if entity @s[y_rotation=-45..45] run item modify entity @s weapon.mainhand _jpad:set_direction/z
+execute if entity @s[y_rotation=-135..-45] run item modify entity @s weapon.mainhand _jpad:set_direction/x

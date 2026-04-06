@@ -1,14 +1,11 @@
 # Get Score
-execute store result score $current_strength temp run data get entity @s data.strength
+execute store result score $current_strength temp run data get entity @s data.strength 10
 #Check if already too low
-execute if score $current_strength temp matches ..1 run return run execute as @p run function _jpad:msg/error_sound
+execute if score $current_strength temp matches ..-1 run return run execute as @p run function _jpad:msg/error_sound
 # Remove 1
 scoreboard players remove $current_strength temp 1
-execute store result entity @s data.strength int 1 run scoreboard players get $current_strength temp
+execute store result entity @s data.strength double 0.1 run scoreboard players get $current_strength temp
 scoreboard players reset $current_strength temp
 
-# Respawn Display
-function _jpad:display/start
-
 # Play Sound
-playsound minecraft:block.scaffolding.place master @a ~ ~ ~ 0.6 1.6 0.6
+playsound minecraft:block.note_block.bit master @s ~ ~ ~ 1 1.4 1

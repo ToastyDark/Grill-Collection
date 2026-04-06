@@ -9,7 +9,7 @@ execute store result score $current_strength temp run data get entity @s data.st
 
 # Add 1
 scoreboard players add $current_strength temp 1
-execute store result entity @s data.strength int 0.1 run scoreboard players get $current_strength temp
+execute store result entity @s data.strength double 0.1 run scoreboard players get $current_strength temp
 scoreboard players reset $current_strength temp
 
 

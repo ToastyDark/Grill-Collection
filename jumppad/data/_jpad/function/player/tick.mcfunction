@@ -24,7 +24,7 @@ execute if entity @s[tag=!jpad_over] run function _jpad:player/actionbar2
 
 # --------------- Jumping Stuffs ---------------
 # Check if player jumped and isn't over pad
-execute if entity @s[scores={jpad_jumped=1..},tag=!jpad_over] run scoreboard players reset jpad_jumped
+execute if entity @s[scores={jpad_jumped=1..},tag=!jpad_over] run scoreboard players reset @s jpad_jumped
 
 # Check if player walked off pad
 execute if entity @s[tag=jpad_can_jump] unless entity @s[tag=jpad_over] unless entity @s[tag=jpad_jumped] run function _jpad:pad/effect/remove

@@ -1,11 +1,7 @@
 # Get Score
 execute store result score $current_gravity temp run data get entity @s data.gravity 100
 #Check if already too high
-#execute if score $current_gravity temp matches 15.. run return run execute as @p run function _jpad:msg/error_sound
-# Multiplay by 10
-#scoreboard players set $10 temp 10
-#scoreboard players operation $current_gravity temp *= $10 temp
-#scoreboard players reset $10 temp
+execute if score $current_gravity temp matches 700.. run return run execute as @p run function _jpad:msg/error_sound
 
 # Add 1
 scoreboard players add $current_gravity temp 1

@@ -20,3 +20,15 @@ execute if entity @s[tag=jpad_editor] if items entity @s weapon.mainhand slime_b
 
 # Actionbar for players not over pad
 execute if entity @s[tag=!jpad_over] run function _jpad:player/actionbar2
+
+
+# --------------- Jumping Stuffs ---------------
+# Check if player jumped
+function _jpad:pad/effect/jump_check
+
+# Check if player walked off pad
+execute if entity @s[tag=jpad_can_jump] unless entity @s[tag=jpad_over] run function _jpad:pad/effect/remove
+
+
+# Check if player is back on ground
+execute if entity @s[tag=jpad_jumped] if entity @s[nbt={OnGround:1b}] run function _jpad:pad/effect/over

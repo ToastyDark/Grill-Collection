@@ -9,3 +9,6 @@ scoreboard players reset $current_strength temp
 
 # Play Sound
 playsound minecraft:block.note_block.bit master @s ~ ~ ~ 1 1.4 1
+
+# Reapply Effects on players
+$execute at @s as @a if entity @s[dx=$(length),dy=4,dz=$(width)] run function _jpad:pad/effect/reapply

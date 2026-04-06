@@ -27,7 +27,7 @@ execute if entity @s[tag=!jpad_over] run function _jpad:player/actionbar2
 function _jpad:pad/effect/jump_check
 
 # Check if player walked off pad
-execute if entity @s[tag=jpad_can_jump] unless entity @s[tag=jpad_over] run function _jpad:pad/effect/remove
+execute if entity @s[tag=jpad_can_jump] unless entity @s[tag=jpad_over] unless entity @s[tag=jpad_jumped] run function _jpad:pad/effect/remove
 
 
 # Check if player is back on ground

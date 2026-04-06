@@ -1,0 +1,1 @@
+attribute @s minecraft:jump_strength modifier remove jpad_strength

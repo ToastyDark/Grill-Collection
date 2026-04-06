@@ -20,6 +20,9 @@ execute if items entity @s weapon.mainhand slime_ball[minecraft:custom_data~{jpa
 # Width
 execute if items entity @s weapon.mainhand slime_ball[minecraft:custom_data~{jpad_mode:size,jpad_facing:z}] run return run function _jpad:action/width/main with storage jpad:temp action
 
+# Strength
+execute if items entity @s weapon.mainhand slime_ball[minecraft:custom_data~{jpad_mode:strength}] run return run function _jpad:action/strength/main with storage jpad:temp action
+
 # Length
 #execute if items entity @s weapon.mainhand slime_ball[minecraft:custom_data~{jpad_mode:length}] run return run function _jpad:action/length/main with storage jpad:temp action
 

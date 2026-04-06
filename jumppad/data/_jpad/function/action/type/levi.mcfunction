@@ -1,1 +1,1 @@
-data modify entity @s data.type set value Levi
+data modify entity @s data.type set value levi

@@ -11,6 +11,9 @@ function _jpad:action/fill_temp_aciton {direction:add}
 # Create
 execute if items entity @s weapon.mainhand slime_ball[minecraft:custom_data~{jpad_mode:create}] run return run function _jpad:action/create/spawn
 
+# Type
+execute if items entity @s weapon.mainhand slime_ball[minecraft:custom_data~{jpad_mode:type}] run return run function _jpad:action/type/main with storage jpad:temp action
+
 # Block
 execute if items entity @s weapon.mainhand slime_ball[minecraft:custom_data~{jpad_mode:block}] run return run function _jpad:action/block/main with storage jpad:temp action
 

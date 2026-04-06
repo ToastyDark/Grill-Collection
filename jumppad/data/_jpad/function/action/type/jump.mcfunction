@@ -1,0 +1,1 @@
+data modify entity @s data.type set value jump

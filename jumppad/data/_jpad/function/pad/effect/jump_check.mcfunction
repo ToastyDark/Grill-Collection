@@ -7,5 +7,9 @@ scoreboard players reset @s jpad_jumped
 execute unless entity @s[tag=jpad_over] run return fail
 
 
+# If levi pad, give levitation
+$execute if data entity @n[type=armor_stand,tag=jpad_jump_pad,distance=..2] data{type:levi} run effect give @s levitation 2 $(strength) true
+
+
 # Give Jump Tag
 tag @s add jpad_jumped

@@ -9,6 +9,9 @@ function _jpad:action/fill_temp_aciton {direction:remove}
 
 
 # ---------------------- Check Mode of Player ----------------------
+# Type
+execute if items entity @s weapon.mainhand slime_ball[minecraft:custom_data~{jpad_mode:type}] run return run function _jpad:action/type/main with storage jpad:temp action
+
 # Length
 execute if items entity @s weapon.mainhand slime_ball[minecraft:custom_data~{jpad_mode:size,jpad_facing:x}] run return run function _jpad:action/length/main with storage jpad:temp action
 

@@ -21,10 +21,10 @@ $execute if items entity @s weapon.mainhand slime_ball[minecraft:custom_data~{jp
 #$execute if items entity @s weapon.mainhand slime_ball[minecraft:custom_data~{jpad_mode:width}] unless entity @s[scores={actionbar_cd=1..}] run return run title @s actionbar [{text:"Width: ",bold:true,color:"gray"},{text:"$(width)",bold:true,color:"aqua"}]
 
 # Strength Mode
-$execute if items entity @s weapon.mainhand slime_ball[minecraft:custom_data~{jpad_mode:strength}] unless entity @s[scores={actionbar_cd=1..}] run return run title @s actionbar [{text:"Strength: ",bold:true,color:"gray"},{text:"$(strength)",bold:true,color:"aqua"}]
+$execute if items entity @s weapon.mainhand slime_ball[minecraft:custom_data~{jpad_mode:strength}] unless entity @s[scores={actionbar_cd=1..}] run return run title @s actionbar [{text:"Strength: ",bold:true,color:"gray"},{text:"+$(strength)",bold:true,color:"aqua"}]
 
 # Gravity Mode
-$execute if items entity @s weapon.mainhand slime_ball[minecraft:custom_data~{jpad_mode:gravity}] unless entity @s[scores={actionbar_cd=1..}] run return run title @s actionbar [{text:"Gravity: ",bold:true,color:"gray"},{text:"$(gravity)",bold:true,color:"aqua"}]
+$execute if items entity @s weapon.mainhand slime_ball[minecraft:custom_data~{jpad_mode:gravity}] unless entity @s[scores={actionbar_cd=1..}] run return run title @s actionbar [{text:"Gravity: ",bold:true,color:"gray"},{text:"+$(gravity)",bold:true,color:"aqua"}]
 
 # Print Mode
 execute if items entity @s weapon.mainhand slime_ball[minecraft:custom_data~{jpad_mode:print}] unless entity @s[scores={actionbar_cd=1..}] run return run title @s actionbar [{text:"Print: ",bold:true,color:"gray"},{text:"Extra Command Options",bold:true,color:"yellow"}]

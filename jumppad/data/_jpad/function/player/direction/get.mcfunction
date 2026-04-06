@@ -1,0 +1,1 @@
+execute if entity @s[y_rotation=-45..45] run data modify

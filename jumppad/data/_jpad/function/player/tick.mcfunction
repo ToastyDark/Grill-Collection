@@ -14,5 +14,9 @@ execute if entity @s[tag=jpad_lmb] run function _jpad:player/left_click
 execute if entity @s[tag=jpad_rmb] run function _jpad:player/right_click
 
 
+# Get Editor's Direction
+execute if entity @s[tag=jpad_editor] if items entity @s weapon.mainhand slime_ball[minecraft:custom_data~{jpad_mode:size}] run function _jpad:player/direction/get
+
+
 # Actionbar for players not over pad
 execute if entity @s[tag=!jpad_over] run function _jpad:player/actionbar2

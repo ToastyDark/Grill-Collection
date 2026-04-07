@@ -2,7 +2,7 @@
 execute if entity @e[type=armor_stand,distance=..3,tag=jpad_jump_pad] run return run function _jpad:msg/already_jpad
 
 # Spawn Jump Pad Marker
-execute align xz run summon armor_stand ~ ~ ~ {Tags:["jpad_jump_pad",jpad_new],Marker:1b,Invulnerable:1b,data:{type:jump,block:slime_block,length:2,width:2,strength:0.5,gravity:-0.05,}}
+execute align xz run summon armor_stand ~ ~ ~ {Tags:["jpad_jump_pad",jpad_new],Marker:1b,Invulnerable:1b,data:{type:jump,block:slime_block,length:2,width:2,dlength:1,dwidth:2,strength:0.5,gravity:-0.05,}}
 
 
 # Commands for new Marker

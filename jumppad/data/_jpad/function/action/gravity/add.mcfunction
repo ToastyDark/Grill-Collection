@@ -6,7 +6,7 @@ execute if score $current_gravity temp matches 10.. run return run execute as @p
 # Add 1
 scoreboard players add $current_gravity temp 1
 execute store result entity @s data.gravity double 0.01 run scoreboard players get $current_gravity temp
-scoreboard players reset $current_gravity temp
+#scoreboard players reset $current_gravity temp
 
 # Play Sound
 playsound minecraft:block.note_block.bit master @p ~ ~ ~ 1 1.8 1

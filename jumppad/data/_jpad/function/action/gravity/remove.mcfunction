@@ -5,7 +5,7 @@ execute unless score $current_gravity temp matches -6..10 run return run execute
 # Remove 1
 scoreboard players remove $current_gravity temp 1
 execute store result entity @s data.gravity double 0.01 run scoreboard players get $current_gravity temp
-scoreboard players reset $current_gravity temp
+#scoreboard players reset $current_gravity temp
 
 # Play Sound
 playsound minecraft:block.note_block.bit master @p ~ ~ ~ 1 1.4 1

@@ -9,8 +9,6 @@ scoreboard players set !-1 temp -1
 # apply
 function vpvp:physics/apply_x with entity @s data.velocity
 execute unless block ~ ~ ~ #minecraft:air run scoreboard players operation $tmp.x temp *= !-1 temp
-execute unless block ~ ~ ~ #minecraft:air run function vpvp:physics/apply_x with entity @s data.velocity
-
 
 
 # store back into data
@@ -18,3 +16,5 @@ execute store result entity @s data.velocity.x float 0.0001 run scoreboard playe
 execute store result entity @s data.velocity.y float 0.0001 run scoreboard players get $tmp.y temp
 execute store result entity @s data.velocity.z float 0.0001 run scoreboard players get $tmp.z temp
 
+# if there was a collision, apply again to escape the block
+execute unless block ~ ~ ~ #minecraft:air run function vpvp:physics/apply with entity @s data.velocity

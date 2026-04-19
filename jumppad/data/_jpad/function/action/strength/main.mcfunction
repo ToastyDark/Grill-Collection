@@ -1,0 +1,1 @@
+$function _jpad:action/strength/start {current_id:$(current_id), direction:$(direction), action:strength }

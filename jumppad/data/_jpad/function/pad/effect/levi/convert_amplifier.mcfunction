@@ -1,0 +1,1 @@
+execute store result storage jpad:temp converted_amplifier int 1 run data get entity @n[type=armor_stand,tag=jpad_jump_pad,distance=..2] data.strength 10

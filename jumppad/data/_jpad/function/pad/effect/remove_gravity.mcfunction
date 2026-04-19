@@ -1,0 +1,1 @@
+attribute @s minecraft:gravity modifier remove jpad_gravity

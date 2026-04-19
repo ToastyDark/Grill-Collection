@@ -16,6 +16,7 @@ scoreboard players set !ground_dampening_m temp 1
 execute at @s run summon minecraft:marker ~ ~ ~ {Tags:[vpvp_old_post_tmp]}
 execute at @s run function vpvp:physics/apply_x with entity @s data.velocity
 execute at @s unless block ~ ~ ~ #minecraft:air run scoreboard players operation $tmp.x temp *= !-1 temp
+execute at @s unless block ~ ~ ~ #minecraft:air run playsound block.bamboo.break master @a[distance=..30]
 execute at @s unless block ~ ~ ~ #minecraft:air run tp @s @e[tag=vpvp_old_post_tmp, limit=1]
 # friction
 execute at @s unless block ~ ~-0.1 ~ #minecraft:air run scoreboard players operation $tmp.x temp /= !ground_dampening temp
@@ -25,6 +26,7 @@ kill @e[tag=vpvp_old_post_tmp]
 execute at @s run summon minecraft:marker ~ ~ ~ {Tags:[vpvp_old_post_tmp]}
 execute at @s run function vpvp:physics/apply_y with entity @s data.velocity
 execute at @s unless block ~ ~ ~ #minecraft:air run scoreboard players operation $tmp.y temp *= !-1 temp
+execute at @s unless block ~ ~ ~ #minecraft:air run playsound block.bamboo.break master @a[distance=..30]
 execute at @s unless block ~ ~ ~ #minecraft:air run scoreboard players operation $tmp.y temp /= !bounce_dampening temp
 execute at @s unless block ~ ~ ~ #minecraft:air run scoreboard players operation $tmp.y temp *= !bounce_dampening_m temp
 execute at @s unless block ~ ~ ~ #minecraft:air run tp @s @e[tag=vpvp_old_post_tmp, limit=1]
@@ -33,6 +35,7 @@ kill @e[tag=vpvp_old_post_tmp]
 execute at @s run summon minecraft:marker ~ ~ ~ {Tags:[vpvp_old_post_tmp]}
 execute at @s run function vpvp:physics/apply_z with entity @s data.velocity
 execute at @s unless block ~ ~ ~ #minecraft:air run scoreboard players operation $tmp.z temp *= !-1 temp
+execute at @s unless block ~ ~ ~ #minecraft:air run playsound block.bamboo.break master @a[distance=..30]
 execute at @s unless block ~ ~ ~ #minecraft:air run tp @s @e[tag=vpvp_old_post_tmp, limit=1]
 # friction
 execute at @s unless block ~ ~-0.1 ~ #minecraft:air run scoreboard players operation $tmp.z temp /= !ground_dampening temp

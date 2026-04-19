@@ -6,7 +6,7 @@ execute store result score $tmp.z temp run data get entity @s data.velocity.z 10
 # flip velocity when in block
 scoreboard players set !-1 temp -1
 
-summon minecraft:marker ~ ~ ~ {Tags:[vpvp_old_post_tmp]}
+execute if block ~ ~ ~ #minecraft:air summon minecraft:marker ~ ~ ~ {Tags:[vpvp_old_post_tmp]}
 
 # apply
 function vpvp:physics/apply_x with entity @s data.velocity

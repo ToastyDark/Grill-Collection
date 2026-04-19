@@ -1,1 +1,0 @@
-execute as @e[tag=gravity_blob] at @s run function vpvp:physics/blob

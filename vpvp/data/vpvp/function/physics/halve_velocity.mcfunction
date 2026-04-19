@@ -3,7 +3,7 @@ execute store result score $tmp.x temp run data get entity @s data.velocity.x 10
 execute store result score $tmp.y temp run data get entity @s data.velocity.y 10000
 execute store result score $tmp.z temp run data get entity @s data.velocity.z 10000
 
-scoreboard players set !2 temp 2
+scoreboard players set !2 temp 3
 scoreboard players operation $tmp.x temp /= !2 temp
 scoreboard players operation $tmp.y temp /= !2 temp
 scoreboard players operation $tmp.z temp /= !2 temp

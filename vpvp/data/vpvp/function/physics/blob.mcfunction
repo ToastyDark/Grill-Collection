@@ -5,7 +5,7 @@ execute store result score $tmp.z temp run data get entity @s data.velocity.z 10
 
 # flip velocity when in block
 scoreboard players set !-1 temp -1
-scoreboard players set !gravity temp -1000
+scoreboard players set !gravity temp -500
 scoreboard players set !bounce_dampening temp 20
 scoreboard players set !bounce_dampening_m temp 15
 

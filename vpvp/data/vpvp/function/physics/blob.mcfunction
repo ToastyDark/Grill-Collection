@@ -18,5 +18,5 @@ execute store result entity @s data.velocity.x float 0.0001 run scoreboard playe
 execute store result entity @s data.velocity.y float 0.0001 run scoreboard players get $tmp.y temp
 execute store result entity @s data.velocity.z float 0.0001 run scoreboard players get $tmp.z temp
 
-tp @s @e[tag=vpvp_old_post_tmp, limit=1]
+execute unless block ~ ~ ~ #minecraft:air run tp @s @e[tag=vpvp_old_post_tmp, limit=1]
 kill @e[tag=vpvp_old_post_tmp]

@@ -12,10 +12,13 @@ summon minecraft:marker ~ ~ ~ {Tags:[vpvp_old_post_tmp]}
 # apply
 function vpvp:physics/apply_x with entity @s data.velocity
 execute at @s unless block ~ ~ ~ #minecraft:air run scoreboard players operation $tmp.x temp *= !-1 temp
+execute at @s unless block ~ ~ ~ #minecraft:air run tp @s @e[tag=vpvp_old_post_tmp, limit=1]
 function vpvp:physics/apply_y with entity @s data.velocity
 execute at @s unless block ~ ~ ~ #minecraft:air run scoreboard players operation $tmp.y temp *= !-1 temp
+execute at @s unless block ~ ~ ~ #minecraft:air run tp @s @e[tag=vpvp_old_post_tmp, limit=1]
 function vpvp:physics/apply_z with entity @s data.velocity
 execute at @s unless block ~ ~ ~ #minecraft:air run scoreboard players operation $tmp.z temp *= !-1 temp
+execute at @s unless block ~ ~ ~ #minecraft:air run tp @s @e[tag=vpvp_old_post_tmp, limit=1]
 
 # gravity
 scoreboard players operation $tmp.y temp += !gravity temp
@@ -25,5 +28,4 @@ execute store result entity @s data.velocity.x float 0.0001 run scoreboard playe
 execute store result entity @s data.velocity.y float 0.0001 run scoreboard players get $tmp.y temp
 execute store result entity @s data.velocity.z float 0.0001 run scoreboard players get $tmp.z temp
 
-execute at @s unless block ~ ~ ~ #minecraft:air run tp @s @e[tag=vpvp_old_post_tmp, limit=1]
 kill @e[tag=vpvp_old_post_tmp]

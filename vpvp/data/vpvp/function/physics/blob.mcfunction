@@ -6,7 +6,8 @@ execute store result score $tmp.z temp run data get entity @s data.velocity.z 10
 # flip velocity when in block
 scoreboard players set !-1 temp -1
 scoreboard players set !gravity temp -1000
-scoreboard players set !bounce_dampening temp 2
+scoreboard players set !bounce_dampening temp 20
+scoreboard players set !bounce_dampening_m temp 15
 
 summon minecraft:marker ~ ~ ~ {Tags:[vpvp_old_post_tmp]}
 
@@ -17,6 +18,7 @@ execute at @s unless block ~ ~ ~ #minecraft:air run tp @s @e[tag=vpvp_old_post_t
 function vpvp:physics/apply_y with entity @s data.velocity
 execute at @s unless block ~ ~ ~ #minecraft:air run scoreboard players operation $tmp.y temp *= !-1 temp
 execute at @s unless block ~ ~ ~ #minecraft:air run scoreboard players operation $tmp.y temp /= !bounce_dampening temp
+execute at @s unless block ~ ~ ~ #minecraft:air run scoreboard players operation $tmp.y temp *= !bounce_dampening_m temp
 execute at @s unless block ~ ~ ~ #minecraft:air run tp @s @e[tag=vpvp_old_post_tmp, limit=1]
 function vpvp:physics/apply_z with entity @s data.velocity
 execute at @s unless block ~ ~ ~ #minecraft:air run scoreboard players operation $tmp.z temp *= !-1 temp

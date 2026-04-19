@@ -9,8 +9,8 @@ scoreboard players set !gravity temp -200
 scoreboard players set !bounce_dampening temp 20
 scoreboard players set !bounce_dampening_m temp 17
 
-scoreboard players set !ground_dampening temp 20
-scoreboard players set !ground_dampening_m temp 13
+scoreboard players set !ground_dampening temp 2
+scoreboard players set !ground_dampening_m temp 1
 
 # apply
 execute at @s run summon minecraft:marker ~ ~ ~ {Tags:[vpvp_old_post_tmp]}

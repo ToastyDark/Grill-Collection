@@ -31,7 +31,7 @@ execute at @s unless block ~ ~ ~ #minecraft:air run tp @s @e[tag=vpvp_old_post_t
 kill @e[tag=vpvp_old_post_tmp]
 
 # gravity
-execute if score $tmp.y temp matches -5000.. run scoreboard players operation $tmp.y temp += !gravity temp
+execute if score $tmp.y temp matches -3000.. run scoreboard players operation $tmp.y temp += !gravity temp
 
 # store back into data
 execute store result entity @s data.velocity.x float 0.0001 run scoreboard players get $tmp.x temp

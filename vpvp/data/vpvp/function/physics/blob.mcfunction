@@ -9,7 +9,6 @@ scoreboard players set !gravity temp -200
 scoreboard players set !bounce_dampening temp 20
 scoreboard players set !bounce_dampening_m temp 17
 
-
 # apply
 execute at @s run summon minecraft:marker ~ ~ ~ {Tags:[vpvp_old_post_tmp]}
 execute at @s run function vpvp:physics/apply_x with entity @s data.velocity
@@ -32,7 +31,7 @@ execute at @s unless block ~ ~ ~ #minecraft:air run tp @s @e[tag=vpvp_old_post_t
 kill @e[tag=vpvp_old_post_tmp]
 
 # gravity
-scoreboard players operation $tmp.y temp += !gravity temp
+execute if score $tmp.y temp matches -1.. run scoreboard players operation $tmp.y temp += !gravity temp
 
 # store back into data
 execute store result entity @s data.velocity.x float 0.0001 run scoreboard players get $tmp.x temp

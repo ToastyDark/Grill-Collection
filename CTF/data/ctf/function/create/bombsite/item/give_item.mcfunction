@@ -1,1 +1,1 @@
-give @s gunpowder[custom_name={"bold":true,"color":"red","italic":false,"text":"Unassigned Bombsite Edtior"},custom_data={ctf_bombsite_editor:true,ctf_map:null},lore=[{"color":"gray","italic":false,"text":"Create and edit CTF Bombsites"}]] 1
+give @s gunpowder[custom_name={"bold":true,"color":"red","italic":false,"text":"Unassigned Bombsite Edtior"},custom_data={ctf_bombsite_editor:true,ctf_map:null},lore=[{"color":"gray","italic":false,"text":"Create and edit CTF Bombsites"},{"color":"gray","italic":false,"text":"Hold and click chat to set map."}]] 1

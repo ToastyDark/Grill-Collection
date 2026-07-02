@@ -1,6 +1,6 @@
 scoreboard players reset @s ctf.map.sandcastle
 
-gamerule sendCommandFeedback false
+#gamerule sendCommandFeedback false
 
 # Set Map
 data modify storage ctf:game map set value sandcastle
@@ -10,4 +10,4 @@ data modify storage ctf:game map set value sandcastle
 schedule function ctf:trigger/map/notif 2t replace
 
 
-gamerule sendCommandFeedback true
+#gamerule sendCommandFeedback true

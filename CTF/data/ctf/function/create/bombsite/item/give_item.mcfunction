@@ -1,0 +1,1 @@
+give @s gunpowder[custom_name={"bold":true,"color":"red","italic":false,"text":"Unassigned Bombsite Edtior"},custom_data={ctf_bombsite_editor:true,ctf_map:null},lore=["Create and edit CTF Bombsites"]] 1

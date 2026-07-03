@@ -1,9 +1,2 @@
-# Stop if player already got list
-execute if entity @s[tag=ctf_bombsite_assigning_map] run return fail
-
-# List Maps
-tellraw @s {text:"Sandcastle",bold:true,color:"yellow"}
-
-
-# Tag player
-tag @s add ctf_bombsite_assigning_map
+#item replace entity @s weapon.mainhand with 
+#gunpowder[custom_name={"bold":true,"color":"red","italic":false,"text":"Unassigned Bombsite Edtior"},custom_data={ctf_bombsite_editor:true,ctf_map:null},lore=[{"color":"gray","italic":false,"text":"Create and edit CTF Bombsites"},{"color":"gray","italic":false,"text":"Hold and click chat to set map."}]] 1

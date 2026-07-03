@@ -1,0 +1,1 @@
+$give @s gunpowder[custom_name=[{"italic":false,"text":"$(display_name)"},{"bold":true,"color":"$(color)","italic":false,"text":" Bombsite Editor"}],custom_data={ctf_bombsite_editor:true,ctf_map:$(map)},lore=[{"color":"gray","italic":false,"text":"Create and edit CTF Bombsites"},{"color":"gray","italic":false,"text":"Hold and click chat to set map."}]] 1

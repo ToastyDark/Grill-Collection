@@ -101,3 +101,10 @@ execute unless entity @s[scores={ctf_new=1..}] run function ctf:lobby/event_give
 
 # Player Tick for Flag Claw
 execute at @s run function ctf:game/flag/claw/item_check
+
+
+
+
+
+# ----------------------------- Editor
+function ctf:edit/ptick

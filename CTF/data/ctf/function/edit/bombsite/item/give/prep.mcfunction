@@ -6,3 +6,6 @@ $data modify storage ctf:temp bombsite_editor_item_give.display_name set from st
 
 # Set Color
 $data modify storage ctf:temp bombsite_editor_item_give.color set from storage ctf:map $(map).display_name.color
+
+# Set Bold
+$data modify storage ctf:temp bombsite_editor_item_give.bold set from storage ctf:map $(map).display_name.bold

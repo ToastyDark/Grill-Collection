@@ -5,10 +5,7 @@
       "conditions": {
         "killing_blow": {
           "tags": [
-            {
-              "expected":false,
-              "id": "minecraft:is_projectile"
-            }
+            {"expected": false, "id": "#minecraft:is_projectile"}
           ]
           
         }     

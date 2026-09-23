@@ -4,7 +4,9 @@
       "trigger": "minecraft:player_killed_entity",
       "conditions": {
         "entity": {
-          "nbt": "{Tags:[\"ctf_has_flag\"]}"
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {"nbt": "{Tags:[\"ctf_has_flag\"]}"}
         }     
       }
     }

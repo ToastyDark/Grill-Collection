@@ -7,8 +7,8 @@ particle minecraft:firework ~ ~2 ~ 0 1 0 .1 10
 data merge storage transportu:temp {color:"color:[1, 1, 1]"}
 data merge storage transportu:temp {potion_color:"16579836"}
 
-data merge storage transportu:temp {world:"minecraft:void"}
-data merge storage transportu:temp {world_lore:"The Void"}
+data merge storage transportu:temp {world:"minecraft:overworld"}
+data merge storage transportu:temp {world_lore:"The Overworld"}
 data merge storage transportu:temp {destination:"unknown"}
 data merge storage transportu:temp {destination_lore:"Unknown"}
 

@@ -26,6 +26,6 @@ execute store result storage ctf:temp bombsite_info.count int 1 run scoreboard p
 function ctf:edit/bombsite/info_dump/loop/header with storage ctf:temp bombsite_info
 
 
-# Set loop to 0 and start
-scoreboard players set $bombsite_info_count temp 0
+# Set loop to 1 and start
+scoreboard players set $bombsite_info_count temp 1
 function ctf:edit/bombsite/info_dump/loop/start with storage ctf:temp bombsite_info

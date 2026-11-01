@@ -1,5 +1,9 @@
+# ----- Set loop data -----
+$data modify storage ctf:temp bombsite_info set value {map:"$(map)",team_num:$(team_num),current_bsite:0}
+
 # Count the number of Bombsites on team from array
 $execute store result score $bombsite_info_max temp run data get storage ctf:map $(map).team$(team_num).bsite
+execute store result storage ctf:temp bombsite_info.count int 1 run scoreboard players get $bombsite_info_max temp
 
 
 # Subtract 1 for shown bombsite count
@@ -10,15 +14,6 @@ execute if score $bombsite_info_shown temp matches ..-1 run scoreboard players s
 
 # Store the number
 execute store result storage ctf:temp bombsite_info.count int 1 run scoreboard players get $bombsite_info_shown temp
-
-
-
-# ----- Set loop data -----
-$data modify storage ctf:temp bombsite_info set value {map:"$(map)",team_num:$(team_num),current_bsite:0}
-
-# Count the number of Bombsites on team from array
-$execute store result score $bombsite_info_max temp run data get storage ctf:map $(map).team$(team_num).bsite
-execute store result storage ctf:temp bombsite_info.count int 1 run scoreboard players get $bombsite_info_max temp
 
 
 

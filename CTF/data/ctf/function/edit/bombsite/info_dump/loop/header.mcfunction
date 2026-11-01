@@ -1,0 +1,1 @@
+$data modify storage ctf:temp bombsite_editor.tellraw append value {text:"\nTeam $(team_num): $(count) bombsite(s)",color:"yellow"}

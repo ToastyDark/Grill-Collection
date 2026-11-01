@@ -1,0 +1,2 @@
+# Append data to tellraw
+$data modify storage ctf:temp bombsite_editor.tellraw append value {text:"\n  #$(num)  $(x) $(y) $(z)  time: $(time_to_explode)  points: $(gives_point)",color:"gray",click_event:{action:"suggest_command",command:"/tp @s $(x) $(y) $(z)"}}

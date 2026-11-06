@@ -98,6 +98,9 @@ data modify storage ctf:map_registry all append value sandcastle
 scoreboard objectives add ctf_create_step dummy
 scoreboard objectives add ctf_create_click dummy
 
+# Bombsites
+scoreboard objectives add ctf_bombsite_edit_cd dummy
+
 # Dead Body Team
 team add ctf_dead_bodies
 team modify ctf_dead_bodies collisionRule never

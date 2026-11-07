@@ -1,33 +1,43 @@
 {
-  "type": "minecraft:multi_action",
+  "type": "minecraft:confirmation",
   "title": {
     "text": "New Bombsite",
     "type": "text",
     "color": "red",
     "bold": true
   },
-  "columns": 2,
-  "actions": [
-
-
+  "inputs": [
     {
+      "type": "minecraft:single_option",
+      "key": "",
       "label": {
-        "text": "Refill Map",
-        "color": "white"
+        "text": "Team",
+        "color": "red"
       },
-      "tooltip": {
-        "text": "Refill all layers of the selected map",
-        "bold": false,
-        "color": "gray"
-      },
-      "action":{
-        "type": "run_command",
-        "command":"function es:admin/refill {'map':'dummy'}"
-
-      },
-      "width": 200
+      "label_visible": true,
+      "options": [
+        {
+          "id": "team_1",
+          "display": {
+            "text": "Team 1",
+            "type": "text",
+            "color": "red"
+          }
+        },
+        {
+          "id": "team_2",
+          "display": {
+            "text": "Team 2",
+            "color": "blue"
+          }
+        }
+      ]
     }
-
-
-  ]
+  ],
+  "yes": {
+    "label": ""
+  },
+  "no": {
+    "label": ""
+  }
 }

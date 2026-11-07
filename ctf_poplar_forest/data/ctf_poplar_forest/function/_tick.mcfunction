@@ -1,0 +1,1 @@
+execute as @e[tag=poplar_launcher] as @e[distance=..2,type=!minecraft:marker,type=!minecraft:item_display,type=!minecraft:block_display] run function ctf_poplar_forest:launchpad/launch

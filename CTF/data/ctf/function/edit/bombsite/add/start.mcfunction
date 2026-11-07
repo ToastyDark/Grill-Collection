@@ -12,7 +12,7 @@ $execute store result storage ctf:temp bombsite_editor.player.$(id).rx float 1 r
 $execute store result storage ctf:temp bombsite_editor.player.$(id).ry float 1 run data get entity @s Rotation[1]
 
 # Spawn Preview
-execute at @s align xyz positioned ~.5 ~ ~.5 run summon armadillo ~ ~ ~ {Silent:true,NoAI:true,Tags:["ctf_bombsite_preview","ctf_bombsite_preview_new"],CustomName:{text:"Unconfirmed Bombsite",color:"yellow",bold:true}}
+execute at @s align xyz positioned ~.5 ~ ~.5 run summon armadillo ~ ~ ~ {Silent:true,NoAI:true,Tags:["ctf_bombsite_preview","ctf_bombsite_preview_new"],CustomName:{text:"Unconfirmed \n Bombsite",color:"yellow",bold:true}}
 scoreboard players operation @n[type=armadillo,tag=ctf_bombsite_preview_new] id = @s id
 tag @n[type=armadillo,tag=ctf_bombsite_preview_new] remove ctf_bombsite_preview_new
 

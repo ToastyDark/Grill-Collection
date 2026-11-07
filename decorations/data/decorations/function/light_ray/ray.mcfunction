@@ -1,0 +1,2 @@
+execute unless block ~-1 ~ ~ #air if block ~-1 ~-1 ~ air run summon minecraft:item_display ~ ~ ~ {item:{"id":"paper", "components":{item_model:"light_ray_west_multi"}}}
+execute unless block ~-1 ~ ~ #air unless block ~-1 ~-1 ~ air run execute positioned ~ ~-1 ~ run function decorations:light_ray/ray

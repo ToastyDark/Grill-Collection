@@ -1,3 +1,5 @@
+execute unless block ~ ~ ~ air run return fail
+
 # west
 execute unless block ~1 ~ ~ #air if block ~1 ~-1 ~ air run summon minecraft:item_display ~0.5 ~-1 ~ {item:{"id":"paper", "components":{item_model:"light_ray_west_multi"}}, Tags:["light_ray"]}
 execute unless block ~1 ~ ~ #air unless block ~1 ~-1 ~ air run execute positioned ~ ~-1 ~ run function decorations:light_ray/ray

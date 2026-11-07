@@ -1,1 +1,1 @@
-$execute positioned ~ $(launch_pad_y) rotated ~ as @s run tp @s ~ ~ ~ ~ ~
+$tp @s ~ $(launch_pad_y) ~

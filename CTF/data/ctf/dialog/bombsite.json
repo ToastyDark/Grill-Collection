@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:multi_action",
+  "title": {
+    "text": "Endspleef Admin",
+    "type": "text",
+    "color": "red",
+    "bold": true
+  },
+  "columns": 2,
+  "actions": [
+
+
+    {
+      "label": {
+        "text": "Refill Map",
+        "color": "white"
+      },
+      "tooltip": {
+        "text": "Refill all layers of the selected map",
+        "bold": false,
+        "color": "gray"
+      },
+      "action":{
+        "type": "run_command",
+        "command":"function es:admin/refill {'map':'dummy'}"
+
+      },
+      "width": 200
+    }
+
+
+  ]
+}

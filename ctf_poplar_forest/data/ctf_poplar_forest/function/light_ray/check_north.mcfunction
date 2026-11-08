@@ -1,4 +1,4 @@
-summon minecraft:item_display ~ ~-.5 ~.499 {item:{"id":"paper", "components":{item_model:"lght_ray_west_multi_extender"}}, Tags:["light_ray", "light_ray_extender_check", "mr_mergerot"]}
+summon minecraft:item_display ~ ~.5 ~.499 {item:{"id":"paper", "components":{item_model:"lght_ray_west_multi_extender"}}, Tags:["light_ray", "light_ray_extender_check", "mr_mergerot"]}
 
 
 scoreboard players add $i ctf.map.poplar 1

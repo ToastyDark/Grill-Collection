@@ -1,3 +1,4 @@
+kill @e[tag=light_ray]
 $scoreboard players set $propogate.w ctf.map.poplar $(x)
 $scoreboard players set $propogate.h ctf.map.poplar $(z)
 scoreboard players set $propogate.x ctf.map.poplar 0

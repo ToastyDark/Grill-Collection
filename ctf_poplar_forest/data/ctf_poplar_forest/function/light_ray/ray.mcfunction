@@ -15,6 +15,3 @@ execute unless entity @e[tag=light_ray_condition] run kill @e[tag=light_ray_exte
 tag @e remove light_ray_extender_check
 tag @e remove light_ray_condition
 
-scoreboard objectives add ctf.map.poplar dummy
-scoreboard players set $swap ctf.map.poplar 0
-scoreboard players set $i ctf.map.poplar 0

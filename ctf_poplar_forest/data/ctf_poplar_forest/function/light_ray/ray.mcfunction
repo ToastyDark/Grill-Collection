@@ -2,9 +2,11 @@ execute unless block ~ ~ ~ air run return fail
 
 scoreboard objectives add ctf.map.poplar dummy
 scoreboard players set $i ctf.map.poplar 0
+scoreboard players set $swap ctf.map.poplar 0
 execute unless function ctf_poplar_forest:light_ray/check_is_air_column run return fail
 
 scoreboard objectives add ctf.map.poplar dummy
+scoreboard players set $swap ctf.map.poplar 0
 scoreboard players set $i ctf.map.poplar 0
 
 # west
@@ -14,6 +16,7 @@ tag @e remove light_ray_extender_check
 tag @e remove light_ray_condition
 
 scoreboard objectives add ctf.map.poplar dummy
+scoreboard players set $swap ctf.map.poplar 0
 scoreboard players set $i ctf.map.poplar 0
 
 # east
@@ -26,6 +29,7 @@ execute as @e[tag=mr_mergerot] run data merge entity @s {Rotation:[180f,0f]}
 tag @e remove mr_mergerot
 
 scoreboard objectives add ctf.map.poplar dummy
+scoreboard players set $swap ctf.map.poplar 0
 scoreboard players set $i ctf.map.poplar 0
 
 # north
